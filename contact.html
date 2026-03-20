@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sohal Singh</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Typed JS -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="navbar" id="nav">
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+  <!-- CONTACT SECTION -->
+  <div class="wrapper">
+    <div class="contact-box">
+      <div class="left-image"><img src="Student.png" alt="Sohal Singh">
+      </div>
+      <div class="right-form">
+        <h1>Let's <span>Talk</span></h1>
+        <p>Send me a message. Sohal Singh will reply soon 😊</p>
+        <form id="contactForm">
+          <div class="input-box">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="input-box">
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="input-box">
+            <input type="text" id="title" placeholder="Subject" required>
+          </div>
+          <div class="input-box">
+            <textarea id="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- LOADING POPUP -->
+  <div class="popup" id="loadingPopup">
+    <div class="popup-box">
+      <div class="loader"></div>
+      <p>Sending message...</p>
+    </div>
+  </div>
+
+  <!-- SUCCESS POPUP -->
+  <div class="popup" id="successPopup">
+    <div class="popup-box">
+      <h3>✔ Message Sent!</h3>
+      <p>Thank you for contacting us.</p>
+      <button id="successBtn">OK</button>
+    </div>
+  </div>
+  <!-- ERROR POPUP -->
+  <div class="popup" id="errorPopup">
+    <div class="popup-box">
+      <h3>❌ Failed</h3>
+      <p>Message not sent. Try again.</p>
+      <button id="errorBtn">OK</button>
+    </div>
+  </div>
+  <!-- JS FILE -->
+  <script src="script.js"></script>
+</body>
+</html>
